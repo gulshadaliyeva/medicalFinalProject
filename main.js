@@ -67,17 +67,21 @@ let email = document.querySelector("#form input.email")
 let number = document.querySelector("#form input.number")
 let subject = document.querySelector("#form input.subject")
 let message = document.querySelector("#form textarea.message")
-if (document.querySelector("#form input.btn") != null) {
+let regNumber = /^\d+$/;
+let regMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+if (submit != null) {
     submit.addEventListener("click", function (e) {
         e.preventDefault()
         if (firstName.value == "") firstName.nextElementSibling.innerText = "Adınızı qeyd edin"
         else if (firstName.value.length < 3) firstName.nextElementSibling.innerText = "Adınızı tam qeyd edin"
         else firstName.nextElementSibling.innerText = ""
         if (email.value == "") email.nextElementSibling.innerText = "E-mailinizi qeyd edin."
-        else if ( !email.value.includes("@")) email.nextElementSibling.innerText = "E-mailinizi düzgün qeyd edin (@)"
+        else if (!regMail.test(email.value)) email.nextElementSibling.innerText = "E-mailinizi düzgün qeyd edin"
         else email.nextElementSibling.innerText = ""
         if (number.value == "") number.nextElementSibling.innerText = "Nömrənizi qeyd edin"
         else if ( !number.value.startsWith("051") && !number.value.startsWith("050") && !number.value.startsWith("077") && !number.value.startsWith("070") && !number.value.startsWith("099")) number.nextElementSibling.innerText = "(051,050,077,070,099) başlamalıdı."
+        else if ( !regNumber.test(number.value)) number.nextElementSibling.innerText = "Nömrəniz yalnız rəqəmlərdən ibarət ola bilər"
+        else if (number.value.length != 10) number.nextElementSibling.innerText = "Nömrəniz 10 simvoldan ibarət olmalıdır."
         else number.nextElementSibling.innerText = ""
         if (subject.value == "") subject.nextElementSibling.innerText = "Müraciyyətinizin nəylə bağlı olduqunu qeyd edin."
         else if (subject.value.length < 3) subject.nextElementSibling.innerText = "mövzunuzu tam qeyd edin."
