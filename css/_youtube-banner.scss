@@ -1,0 +1,35 @@
+#youtube-banner{
+    background-image: url(../img/10.jpg);
+    height: 450px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4901960784);
+    background-blend-mode: color;
+    .content{
+        h2{
+            font-size: 35px;
+        }
+    }
+    .video-button{
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 10px;
+            background: $mainWatergreen;
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-size: 50px;
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    #youtube-banner .content h2{
+        font-size: 20px;
+    }
+}

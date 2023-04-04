@@ -1,0 +1,137 @@
+header#large-screens {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .menu {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-right: 30px;
+
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: black;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: $mainWatergreen;
+                    }
+                }
+            }
+        }
+    }
+    .menu a.active{
+        color: $mainWatergreen;
+    }
+
+    .search {
+        input {
+            width: calc(100% - 100px);
+            height: 46px;
+            padding: 0 20px;
+            border-radius: 4px;
+            border-color: #f6f6f6;
+            background: #f6f6f6;
+            border: none;
+        }
+
+        .btn {
+            width: 100px;
+            background: #0aceb7;
+            border-radius: 0 5px 5px 0;
+            transition: all .3s ease;
+            color: #fff;
+
+            &:hover {
+                background: black;
+                color: $mainWatergreen;
+            }
+        }
+    }
+}
+
+header#small-screens {
+    padding-bottom: 30px;
+    .menu-wrapper {
+        a {
+            text-decoration: none;
+            color: black;
+
+            span {
+                font-size: 33px;
+            }
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+    .search {
+        input {
+            width: 70%;
+            height: 46px;
+            padding: 0 5px;
+            border-radius: 4px;
+            border-color: #f6f6f6;
+            background: #f6f6f6;
+            border: navajowhite;
+            font-size: 10px;
+        }
+
+        .btn {
+            width: 100px;
+            background: #0aceb7;
+            border-radius: 0 5px 5px 0;
+            transition: all .3s ease;
+            color: #fff;
+            font-size: 10px;
+
+            &:hover {
+                background: black;
+                color: $mainWatergreen;
+            }
+        }
+    }
+
+    nav{
+        z-index: 999;
+        background-color: white;
+        position: absolute;
+        top: 70px;
+        left: -120%;
+        transition: all .7s ease;
+        height: calc(100vh - 119px);
+        .content {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    border-bottom: 2px solid rgba(0, 0, 0, .15);
+                    text-align: center;
+
+                    a {
+                        font-size: 18px;
+                        text-decoration: none;
+                        color: black;
+                        transition: all .3s ease;
+                        display: block;
+                        padding: 15px 0;
+                        &:hover {
+                            color: $mainWatergreen;
+                        }
+                    }
+                }
+            }
+        }
+        .content a.active{
+            color: $mainWatergreen;
+        }
+    }
+    nav.active{
+        left: 0;
+    }
+}

@@ -1,0 +1,113 @@
+$mainWatergreen: #0aceb7;
+
+
+
+@import "_header";
+@import "_our-services";
+@import "_WhyChooseUs";
+@import "_consultation";
+@import "_doctors";
+@import "_faqs";
+@import "_aboutUs";
+@import "_youtube-banner";
+@import "_customers";
+@import "_slider";
+@import "_contact-info";
+@import "_form";
+@import "_ourLatestNews";
+@import "_subscribeNow";
+@import "_footer";
+
+
+
+body.active{
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    .content{
+        padding-bottom: 30px;
+        h5{
+            color: $mainWatergreen;
+            font-size: 18px;
+        }
+        h2{
+            font-size: 33px;
+            font-weight: 500;
+        }
+        p{
+            color: #545454;
+        }
+    }
+}
+#end{
+    padding: 20px 0;
+    background-color: #032722;
+    p{
+       text-align: center; 
+       margin: 0;
+       color: white;
+    }
+}
+
+#banner{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #0000007d;
+    background-blend-mode: color;
+    .page-content{
+        text-align: center;
+        h2{
+            margin-bottom: 15px;
+            color: white;
+        }
+        ul{
+            margin: 0;
+            display: inline-flex;
+            padding: 0;
+            justify-content: center;
+            list-style: none;
+            li{
+                font-weight: 500;
+                color: $mainWatergreen;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin-right: 10px;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $mainWatergreen;
+                    }
+                }
+            }
+            span{
+                margin-right: 10px;
+                color: $mainWatergreen;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767.98px){
+    .title .content h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .title .content h5{
+        font-size: 16px;
+    }
+    .title .content h2{
+        font-size: 12px;
+    }
+    .title .content p{
+        font-size: 8px;
+    }
+    #end p{
+        font-size: 13px;
+    }
+}
