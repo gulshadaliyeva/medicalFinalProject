@@ -348,7 +348,7 @@ header#small-screens nav.active {
   }
 }
 #doctors {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 #doctors .wrapper {
   transition: all 0.3s ease;
@@ -419,6 +419,11 @@ header#small-screens nav.active {
     font-size: 20px;
   }
 }
+@media (max-width: 991.98px) {
+  #doctors .wrapper {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 575.98px) {
   #doctors .wrapper {
     margin-bottom: 20px;
@@ -435,6 +440,7 @@ header#small-screens nav.active {
   width: 100%;
 }
 #faqs .item ul {
+  padding: 0;
   list-style: none;
   margin: 0;
 }
@@ -487,6 +493,9 @@ header#small-screens nav.active {
   #faqs .item ul li .heading a {
     font-size: 12px;
   }
+  #faqs .img-wrapper {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   #faqs .item ul {
@@ -535,6 +544,11 @@ header#small-screens nav.active {
   color: #0aceb7;
 }
 
+@media (max-width: 991.98px) {
+  #aboutUs .img-wrapper img {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 767.98px) {
   #aboutUs .content h5 {
     margin-top: 10px;
@@ -645,6 +659,11 @@ header#small-screens nav.active {
 @media (max-width: 991.98px) {
   #customers .item .wrapper .content p {
     font-size: 11px;
+  }
+}
+@media (max-width: 575.98px) {
+  #customers .item .wrapper .content p {
+    font-size: 9px;
   }
 }
 #slider {
@@ -1122,6 +1141,11 @@ footer .contact ul li a:hover {
   transform: scale(0.9);
 }
 
+@media (max-width: 991.98px) {
+  footer .item ul {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 575.98px) {
   footer .menu ul {
     margin-bottom: 15px;

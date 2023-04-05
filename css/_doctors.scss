@@ -1,5 +1,5 @@
         #doctors{
-            padding-top: 60px;
+            padding: 60px 0;
             .wrapper{
                 transition: all .3s ease;
                 &:hover{
@@ -69,6 +69,11 @@
 @media (max-width: 1199.98px){
     #doctors .wrapper .item h2{
         font-size: 20px;
+    }
+}
+@media (max-width: 991.98px){
+    #doctors .wrapper{
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 575.98px){

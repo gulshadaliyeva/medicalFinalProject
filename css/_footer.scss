@@ -115,6 +115,11 @@ footer{
         }
     }
 }
+@media (max-width: 991.98px){
+    footer .item ul{
+        margin-bottom: 10px;
+    }
+}
 @media (max-width: 575.98px){
     footer .menu ul{
         margin-bottom: 15px;

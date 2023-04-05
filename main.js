@@ -107,7 +107,7 @@ $(document).ready(function(){
         nav:false,
         dots:true,
         margin:15,
-        autoplay:false,
+        autoplay:true,
         autoplayTimeout:1500,
         autoplayHoverPause:true,
         responsiveClass:true,
