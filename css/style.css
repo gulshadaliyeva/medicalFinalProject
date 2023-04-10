@@ -25,7 +25,7 @@ header#large-screens .search input {
   width: calc(100% - 100px);
   height: 46px;
   padding: 0 20px;
-  border-radius: 4px;
+  border-radius: 5px 0px 0px 5px;
   border-color: #f6f6f6;
   background: #f6f6f6;
   border: none;
@@ -565,7 +565,13 @@ header#small-screens nav.active {
     font-size: 14px;
   }
   #aboutUs .content P {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  #aboutUs .img-wrapper img {
+    height: 300px;
+  }
+  #aboutUs .content a {
+    font-size: 12px;
   }
 }
 #youtube-banner {
@@ -577,6 +583,8 @@ header#small-screens nav.active {
 }
 #youtube-banner .content h2 {
   font-size: 35px;
+  color: white;
+  margin-bottom: 15px;
 }
 #youtube-banner .video-button {
   display: flex;
@@ -749,7 +757,14 @@ header#small-screens nav.active {
     font-size: 13px;
   }
   #slider .item .content {
-    left: 30%;
+    left: 40%;
+  }
+  #slider .owl-carousel .owl-nav button.owl-prev, #slider .owl-carousel .owl-nav button.owl-next {
+    bottom: 5px;
+    font-size: 44px;
+  }
+  #slider .owl-carousel .owl-nav button.owl-prev {
+    right: 30px;
   }
 }
 #contact-info {
@@ -1000,7 +1015,7 @@ header#small-screens nav.active {
   height: 50px;
   font-size: 14px;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px 0px 0px 5px;
   border-color: #f6f6f6;
   background: white;
   border: none;
@@ -1047,6 +1062,7 @@ footer .item .logo {
 footer .item p {
   color: white;
   margin-bottom: 30px;
+  font-size: 17px;
 }
 footer .item ul {
   display: flex;
@@ -1176,6 +1192,7 @@ body.active {
   font-weight: 500;
 }
 .title .content p {
+  margin: 0;
   color: #545454;
 }
 
@@ -1241,9 +1258,12 @@ body.active {
     font-size: 12px;
   }
   .title .content p {
-    font-size: 8px;
+    font-size: 12px;
   }
   #end p {
     font-size: 13px;
+  }
+  #banner {
+    height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -108,7 +108,7 @@ $(document).ready(function(){
         dots:true,
         margin:15,
         autoplay:true,
-        autoplayTimeout:1500,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         responsiveClass:true,
         responsive:{

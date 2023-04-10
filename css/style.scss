@@ -37,6 +37,7 @@ body.active{
             font-weight: 500;
         }
         p{
+            margin: 0;
             color: #545454;
         }
     }
@@ -105,9 +106,12 @@ body.active{
         font-size: 12px;
     }
     .title .content p{
-        font-size: 8px;
+        font-size: 12px;
     }
     #end p{
         font-size: 13px;
+    }
+    #banner{
+        height: 200px;
     }
 }

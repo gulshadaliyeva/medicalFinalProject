@@ -80,7 +80,14 @@
         font-size: 13px;
      }
      #slider .item .content{
-        left: 30%;
+        left: 40%;
+     }
+     #slider .owl-carousel .owl-nav button.owl-prev,#slider .owl-carousel .owl-nav button.owl-next{
+        bottom: 5px;
+        font-size: 44px;
+     }
+     #slider .owl-carousel .owl-nav button.owl-prev{
+        right: 30px;
      }
 }
 
